@@ -1,0 +1,246 @@
+/* Estilos para telas maiores que 576 */
+@media (min-width: 576px) {
+
+    /* LOCATION */
+    .location {
+        flex-direction: row;
+        font-size: 14px;
+    }
+
+    .location p {
+        margin: 0 auto;
+    }
+
+    .networks {
+        position: absolute;
+        right: 10%;
+    }
+
+    /* HEADER */
+    .container-header {
+        height: 60px;
+        align-items: center;
+    }
+
+    .img-logo {
+        position: absolute;
+        left: 10%;
+    }
+
+    .img-logo img {
+        width: 60%;
+    }
+
+    /* NAV */
+    label ion-icon {
+        transform: translateY(-50%);
+    }
+
+    nav ul {
+        font-size: 16px;
+    }
+
+    /* WELCOME */
+    #search-container {
+        padding: 10px;
+    }
+
+    #search-container h1 {
+        font-size: 24px;
+    }
+
+    #search-container form {
+        height: 100px;
+    }
+
+    #search {
+        padding: 15px;
+        width: 50%;
+    }
+
+    #search::placeholder {
+        font-size: 16px;
+    }
+
+    #pontos-turisticos {
+        display: none;
+    }
+
+    .filter-container p {
+        font-size: 16px;
+    }
+
+    .btn-filter {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        padding: 40px;
+        margin-top: 30px;
+    }
+
+    .btn-filter button {
+        background: #508E8B;
+        padding: 10px;
+        border-radius: 20px;
+        color: #fff;
+        font-size: 14px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .btn-filter button:hover {
+        background: #9ACEA7;
+        color: black;
+    }
+
+    .btn-filter button:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(86, 208, 202, 0.5);
+    }
+
+    section {
+        display: block;
+        width: 100%;
+    }
+
+    /* CARD */
+    .card {
+        height: 220px;
+    }
+
+    .container-img {
+        display: flex;
+        width: 50%;
+        max-width: 300px;
+        height: 80%;
+    }
+
+    #img-card {
+        width: 90%;
+        height: 0;
+        padding-bottom: 90%;
+    }
+
+    .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .info p {
+        font-size: 12px;
+    }
+
+    .bar {
+        height: 10px;
+    }
+
+    .buttons button{
+        font-size: 12px;
+    }
+
+    /* FOOTER */
+    #footer_content {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 3rem 3.5rem;
+        font-size: 14px;
+    }
+
+    #footer-list ul li {
+        text-align: start;
+    }
+
+    #footer_copyright p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    /* NAV */
+    label {
+        display: none;
+    }
+
+    nav {
+        position: absolute;
+        right: 0%;
+        white-space: nowrap;
+    }
+
+    nav ul {
+        position: static;
+        height: auto;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li {
+        border: 0;
+    }
+
+    li#back ion-icon {
+        display: none;
+    }
+
+
+    .links {
+        margin-right: 9vw;
+    }
+
+    /* WELCOME */
+    .filter-container p {
+        font-size: 18px;
+    }
+
+    .btn-filter button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .info p {
+        font-size: 14px;
+    }
+
+    /* CARD */
+    .card {
+        height: 250px;
+    }
+
+    .container-img {
+        display: flex;
+        width: 50%;
+        max-width: 400px;
+        height: 80%;
+    }
+
+    #img-card {
+        width: 90%;
+        height: 0;
+        padding-bottom: 90%;
+    }
+
+    .info p {
+        font-size: 14px;
+    }
+
+    .bar-all{
+        gap: 8px;
+    }
+
+    .bar {
+        height: 12px;
+    }
+
+    .buttons button{
+        font-size: 14px;
+        padding: 8px;
+    }
+
+}
