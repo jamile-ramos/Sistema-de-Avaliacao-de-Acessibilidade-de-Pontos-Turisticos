@@ -11,3 +11,4 @@ Route::get('/cadastrarPontoTuristico', [TouristPointController::class, 'TouristP
 Route::get('/cadastrarUsuario', [UserController::class, 'user']);
 
 
+

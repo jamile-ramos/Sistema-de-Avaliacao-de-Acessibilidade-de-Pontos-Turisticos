@@ -33,7 +33,7 @@
 
         <div class="container container-header flex">
             <div class="img-logo">
-                <img src="/img/logo.png" alt="Logo Caminhos Livres">
+                <a href="/"><img src="/img/logo.png" alt="Logo Caminhos Livres"></a>
             </div>
             <nav class="flex none-list">
                 <input type="checkbox" id="check">
@@ -41,7 +41,7 @@
                 <ul class="links">
                     <li id="back"><a href="/">Avaliar</a>
                     <ion-icon name="arrow-forward-outline" id="back-icon"></ion-icon></li>
-                    <li><a href="/">Cadastrar ponto turístico</a></li>
+                    <li><a href="/cadastrarPontoTuristico">Cadastrar ponto turístico</a></li>
                     <li><a href="/">Contraste</a></li>
                     <li><a href="/">+A</a></li>
                     <li><a href="/">-A</a></li>

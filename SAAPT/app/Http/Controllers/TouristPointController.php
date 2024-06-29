@@ -9,11 +9,11 @@ class TouristPointController extends Controller
 {
     public function index(){
 
-        $touristPoints = TouristPoint::all();
-        return view('welcome', ['touristPoints'=>$touristPoints]);
+        $points = TouristPoint::all();
+        return view('welcome', ['points'=>$points]);
     }
 
     public function touristPoint(){
-        return view('registerTouristPoint');
+        return view('/attractions/create');
     }
 }

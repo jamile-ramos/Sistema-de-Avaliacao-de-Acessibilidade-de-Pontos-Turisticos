@@ -37,7 +37,7 @@
 
     <section>
         <div class="container-card">
-            @foreach($touristPoints as $point)
+            @foreach($points as $point)
             <div class="card">
                 <div class="title-card flex">
                     <p>{{ $point->name }}</p>
