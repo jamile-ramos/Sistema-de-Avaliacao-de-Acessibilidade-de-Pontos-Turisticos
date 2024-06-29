@@ -96,67 +96,16 @@
                     <button>Mais informações</button>
                 </div>
             </div>
-            <div class="card">
-                <div class="container-img">
-                    <div id="img-card"></div>
-                </div>
-                <div class="info">
-                    <p>Parque da cidade Guanambi</p>
-                    <div class="bar-all flex">
-                        <div class="bar">
-                            <div class="percentage"></div>
-                        </div>
-                        <div class="bar">
-                            <div class="percentage"></div>
-                        </div>
-                        <div class="bar">
-                            <div class="percentage"></div>
-                        </div>
-                        <div class="bar">
-                            <div class="percentage"></div>
-                        </div>
-                        <div class="bar">
-                            <div class="percentage"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="buttons flex">
-                    <button>Avaliar</button>
-                    <button>Mais informações</button>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="container-img">
-                    <div id="img-card"></div>
-                </div>
-                <div class="info">
-                    <p>Parque da cidade Guanambi</p>
-                    <div class="bar-all flex">
-                        <div class="bar">
-                            <div class="percentage"></div>
-                        </div>
-                        <div class="bar">
-                            <div class="percentage"></div>
-                        </div>
-                        <div class="bar">
-                            <div class="percentage"></div>
-                        </div>
-                        <div class="bar">
-                            <div class="percentage"></div>
-                        </div>
-                        <div class="bar">
-                            <div class="percentage"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="buttons flex">
-                    <button>Avaliar</button>
-                    <button>Mais informações</button>
-                </div>
-            </div>            
         </div>
     </section>
+
+        <section>
+            <div class="rate-now">
+                <p>Ajude a construir um turismo mais inclusivo, avaliando os pontos turísticos que você visita!
+                </p>
+                <button class="btn"><ion-icon name="thumbs-up-outline"></ion-icon>Avalie já!</button>
+            </div>
+        </section>
 
 </main>
 

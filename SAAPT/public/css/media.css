@@ -132,7 +132,7 @@
     }
 
     .info p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .bar {
@@ -156,6 +156,11 @@
 
     #footer_copyright p {
         font-size: 14px;
+    }
+
+    /* FRASE AVALIE JÁ*/
+    .rate-now p{
+        font-size: 16px;
     }
 }
 
@@ -197,6 +202,7 @@
     /* WELCOME */
     .filter-container p {
         font-size: 18px;
+        margin: 10px;
     }
 
     .btn-filter button {
@@ -205,7 +211,7 @@
     }
 
     .info p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     /* CARD */
@@ -241,6 +247,11 @@
     .buttons button{
         font-size: 14px;
         padding: 8px;
+    }
+
+    /* FRASE AVALIE JÁ*/
+    .rate-now{
+        flex-direction: row;
     }
 
 }
