@@ -54,7 +54,7 @@
                                     <div class="bar">
                                         <div class="percentage"></div>
                                     </div>
-                                    <div class="number-percentage">90%</div>
+                                    <div class="number-percentage">{{ $point->generalNotes }}%</div>
                                 </div>
                             </div>
                             <div class="group-bar">
@@ -63,7 +63,7 @@
                                     <div class="bar">
                                         <div class="percentage"></div>
                                     </div>
-                                    <div class="number-percentage">90%</div>
+                                    <div class="number-percentage">{{ $point->auditoryNote }}%</div>
                                 </div>
                             </div>
                             <div class="group-bar">
@@ -72,7 +72,7 @@
                                     <div class="bar">
                                         <div class="percentage"></div>
                                     </div>
-                                    <div class="number-percentage">90%</div>
+                                    <div class="number-percentage">{{ $point->visualNote }}%</div>
                                 </div>
                             </div>
                             <div class="group-bar">
@@ -81,7 +81,7 @@
                                     <div class="bar">
                                         <div class="percentage"></div>
                                     </div>
-                                    <div class="number-percentage">90%</div>
+                                    <div class="number-percentage">{{ $point->physicalNotes }}%</div>
                                 </div>
                             </div>
                             <div class="group-bar">
@@ -90,7 +90,7 @@
                                     <div class="bar">
                                         <div class="percentage"></div>
                                     </div>
-                                    <div class="number-percentage">90%</div>
+                                    <div class="number-percentage">{{ $point->mobilityNote }}%</div>
                                 </div>
                             </div>
                         </div>

@@ -18,7 +18,12 @@ return new class extends Migration
             $table->string('street', 100);
             $table->string('district', 50);
             $table->string('zipCode', 8);
-            $table->text('description');                                                                   
+            $table->text('description');      
+            $table->double('generalNotes')->nullable();
+            $table->double('visualNote')->nullable();
+            $table->double('auditoryNote')->nullable();
+            $table->double('mobilityNote')->nullable();
+            $table->double('physicalNote')->nullable();                                                             
         });
     }
 
@@ -27,3 +32,4 @@ return new class extends Migration
         Schema::dropIfExists('touristPoint');
     }
 };
+
