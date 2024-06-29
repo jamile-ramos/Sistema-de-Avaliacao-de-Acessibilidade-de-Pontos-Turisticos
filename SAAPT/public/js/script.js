@@ -15,9 +15,14 @@ back_icon.addEventListener('click', function(){
 })
 
 
-document.addEventListener('DOMContentLoaded', function(){
-    const numberPercentage = document.querySelector('.number-percentage').textContent;
-    const percentage = document.querySelector('.percentage');
+/*js da percentagem*/
+document.addEventListener('DOMContentLoaded', function() {
+    const percentages = document.querySelectorAll('.percentage');
 
-    percentage.style.width = numberPercentage;
-})
+    percentages.forEach(percentage =>{
+        let value = parseFloat(percentage.dataset.value);
+        value *= 10;
+        console.log(`${value}%`)
+        percentage.style.width = `${value}%`
+    })
+});

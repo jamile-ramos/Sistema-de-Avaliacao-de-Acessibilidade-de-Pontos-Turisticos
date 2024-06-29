@@ -40,7 +40,7 @@
             @foreach($touristPoints as $point)
             <div class="card">
                 <div class="title-card flex">
-                    <p>{{ $point->name}}</p>
+                    <p>{{ $point->name }}</p>
                 </div>
                 <div class="group-touristPoint">
                     <div class="container-img">
@@ -52,7 +52,7 @@
                                 <p>Acessibilidade:</p>
                                 <div class="group-number">
                                     <div class="bar">
-                                        <div class="percentage"></div>
+                                        <div class="percentage" data-value="{{ $point->generalNotes }}"></div>
                                     </div>
                                     <div class="number-percentage">{{ $point->generalNotes }}%</div>
                                 </div>
@@ -61,7 +61,7 @@
                                 <p>Auditiva:</p>
                                 <div class="group-number">
                                     <div class="bar">
-                                        <div class="percentage"></div>
+                                        <div class="percentage" data-value="{{ $point->auditoryNote }}" ></div>
                                     </div>
                                     <div class="number-percentage">{{ $point->auditoryNote }}%</div>
                                 </div>
@@ -70,7 +70,7 @@
                                 <p>Visual:</p>
                                 <div class="group-number">
                                     <div class="bar">
-                                        <div class="percentage"></div>
+                                        <div class="percentage" data-value="{{ $point->visualNote }}"></div>
                                     </div>
                                     <div class="number-percentage">{{ $point->visualNote }}%</div>
                                 </div>
@@ -79,16 +79,16 @@
                                 <p>Física e Motora:</p>
                                 <div class="group-number">
                                     <div class="bar">
-                                        <div class="percentage"></div>
+                                        <div class="percentage" data-value="{{ $point->physicalNote }}" ></div>
                                     </div>
-                                    <div class="number-percentage">{{ $point->physicalNotes }}%</div>
+                                    <div class="number-percentage">{{ $point->physicalNote }}%</div>
                                 </div>
                             </div>
                             <div class="group-bar">
                                 <p>Mobilidade Reduzida:</p>
                                 <div class="group-number">
                                     <div class="bar">
-                                        <div class="percentage"></div>
+                                        <div class="percentage" data-value="{{ $point->mobilityNote }}" ></div>
                                     </div>
                                     <div class="number-percentage">{{ $point->mobilityNote }}%</div>
                                 </div>
