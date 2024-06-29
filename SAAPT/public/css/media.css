@@ -108,13 +108,13 @@
 
     /* CARD */
     .card {
-        height: 220px;
+        height: 320px;
+        max-width: 380px;
     }
 
     .container-img {
         display: flex;
         width: 50%;
-        max-width: 300px;
         height: 80%;
     }
 
@@ -126,17 +126,36 @@
 
     .info {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        align-items: start;
         flex-direction: column;
+        height: 80%;
+        padding-top: 32px;
     }
 
     .info p {
         font-size: 14px;
+        padding-bottom: 12px;
     }
 
     .bar {
         height: 10px;
+    }
+
+    .group-bar{
+        width: 100%;
+    }
+    
+    .group-bar p{
+        padding: 5px 0px 5px 0px;
+        font-size: 12px;
+    }
+
+    .number-percentage{
+        font-size: 14px;    
+    }
+    
+    .buttons{
+        padding-top: 12px;
     }
 
     .buttons button{
@@ -216,7 +235,7 @@
 
     /* CARD */
     .card {
-        height: 250px;
+        height: 390px;
     }
 
     .container-img {
@@ -232,12 +251,21 @@
         padding-bottom: 90%;
     }
 
+    .info{
+        width: 50%;
+    }
+
     .info p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .bar-all{
+        margin-top: 10px;
         gap: 8px;
+    }
+
+    .group-bar p{
+        font-size: 14px;
     }
 
     .bar {
@@ -246,7 +274,7 @@
 
     .buttons button{
         font-size: 14px;
-        padding: 8px;
+        padding: 12px;
     }
 
     /* FRASE AVALIE JÁ*/

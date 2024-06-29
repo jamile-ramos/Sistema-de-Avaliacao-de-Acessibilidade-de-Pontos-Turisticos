@@ -5,7 +5,7 @@ window.addEventListener('scroll', function(){
         menu.style.transition = 'none'
         menu.style.top = '0'
     }else {
-        menu.style.top = '80px'; // O valor inicial do top ajustado no CSS
+        menu.style.top = '80px'; 
     }
 })
 
@@ -14,3 +14,10 @@ back_icon.addEventListener('click', function(){
     document.getElementById('check').checked = false;
 })
 
+
+document.addEventListener('DOMContentLoaded', function(){
+    const numberPercentage = document.querySelector('.number-percentage').textContent;
+    const percentage = document.querySelector('.percentage');
+
+    percentage.style.width = numberPercentage;
+})

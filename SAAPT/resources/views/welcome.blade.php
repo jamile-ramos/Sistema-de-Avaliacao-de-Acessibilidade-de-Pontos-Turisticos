@@ -37,27 +37,62 @@
 
     <section>
         <div class="container-card">
+            @foreach($touristPoints as $point)
             <div class="card">
-                <div class="container-img">
-                    <div id="img-card"></div>
+                <div class="title-card flex">
+                    <p>{{ $point->name}}</p>
                 </div>
-                <div class="info">
-                    <p>Parque da cidade Guanambi</p>
-                    <div class="bar-all flex">
-                        <div class="bar">
-                            <div class="percentage"></div>
-                        </div>
-                        <div class="bar">
-                            <div class="percentage"></div>
-                        </div>
-                        <div class="bar">
-                            <div class="percentage"></div>
-                        </div>
-                        <div class="bar">
-                            <div class="percentage"></div>
-                        </div>
-                        <div class="bar">
-                            <div class="percentage"></div>
+                <div class="group-touristPoint">
+                    <div class="container-img">
+                        <div id="img-card"></div>
+                    </div>
+                    <div class="info">
+                        <div class="bar-all flex">
+                            <div class="group-bar">
+                                <p>Acessibilidade:</p>
+                                <div class="group-number">
+                                    <div class="bar">
+                                        <div class="percentage"></div>
+                                    </div>
+                                    <div class="number-percentage">90%</div>
+                                </div>
+                            </div>
+                            <div class="group-bar">
+                                <p>Auditiva:</p>
+                                <div class="group-number">
+                                    <div class="bar">
+                                        <div class="percentage"></div>
+                                    </div>
+                                    <div class="number-percentage">90%</div>
+                                </div>
+                            </div>
+                            <div class="group-bar">
+                                <p>Visual:</p>
+                                <div class="group-number">
+                                    <div class="bar">
+                                        <div class="percentage"></div>
+                                    </div>
+                                    <div class="number-percentage">90%</div>
+                                </div>
+                            </div>
+                            <div class="group-bar">
+                                <p>Física e Motora:</p>
+                                <div class="group-number">
+                                    <div class="bar">
+                                        <div class="percentage"></div>
+                                    </div>
+                                    <div class="number-percentage">90%</div>
+                                </div>
+                            </div>
+                            <div class="group-bar">
+                                <p>Mobilidade Reduzida:</p>
+                                <div class="group-number">
+                                    <div class="bar">
+                                        <div class="percentage"></div>
+                                    </div>
+                                    <div class="number-percentage">90%</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -66,46 +101,17 @@
                     <button>Mais informações</button>
                 </div>
             </div>
-
-            <div class="card">
-                <div class="container-img">
-                    <div id="img-card"></div>
-                </div>
-                <div class="info">
-                    <p>Parque da cidade Guanambi</p>
-                    <div class="bar-all flex">
-                        <div class="bar">
-                            <div class="percentage"></div>
-                        </div>
-                        <div class="bar">
-                            <div class="percentage"></div>
-                        </div>
-                        <div class="bar">
-                            <div class="percentage"></div>
-                        </div>
-                        <div class="bar">
-                            <div class="percentage"></div>
-                        </div>
-                        <div class="bar">
-                            <div class="percentage"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="buttons flex">
-                    <button>Avaliar</button>
-                    <button>Mais informações</button>
-                </div>
-            </div>
+            @endforeach
         </div>
     </section>
 
-        <section>
-            <div class="rate-now">
-                <p>Ajude a construir um turismo mais inclusivo, avaliando os pontos turísticos que você visita!
-                </p>
-                <button class="btn"><ion-icon name="thumbs-up-outline"></ion-icon>Avalie já!</button>
-            </div>
-        </section>
+    <section>
+        <div class="rate-now">
+            <p>Ajude a construir um turismo mais inclusivo, avaliando os pontos turísticos que você visita!
+            </p>
+            <button class="btn"><ion-icon name="thumbs-up-outline"></ion-icon>Avalie já!</button>
+        </div>
+    </section>
 
 </main>
 

@@ -8,8 +8,8 @@ return new class extends Migration
 {
     public function up(): void
     {
-        Schema::create('tourist_point', function (Blueprint $table) {
-            $table->id();
+        Schema::create('touristPoint', function (Blueprint $table) {
+            $table->id()->autoIncrement();
             $table->timestamps();
             $table->string('name', 100)->nullable(false); //define como not null
             $table->integer('touristPointType')->comment('0 - publico e 1 - privado'); // define comentário
@@ -24,6 +24,6 @@ return new class extends Migration
 
     public function down(): void
     {
-        Schema::dropIfExists('tourist_point');
+        Schema::dropIfExists('touristPoint');
     }
 };
