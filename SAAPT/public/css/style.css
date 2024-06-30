@@ -430,7 +430,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20vh 0 20vh 0;
+    margin: 15vh 0 15vh 0;
     flex-direction: column;
 }
 
@@ -453,71 +453,66 @@ main {
     width: 100%;
 }
 
-.group-form {
-    display: flex;
-    justify-content: start;
-    align-items: center; 
-    height: 60px;
-    gap: 8px;
-}
-
-.group-form label {
-    width: 40px;
-    color: white;
+.group-form{
     display: flex;
     justify-content: start;
     align-items: center;
+    height: 50px;
+}
+
+.group-form label{
     font-size: 12px;
+    padding: 0 5px 0 5px;
 }
 
-.group-form input {
-    width: 50%;
-    height: 25px;
+.group-form input{
+    height: 20px;
     border-radius: 10px;
-    padding: 10px;
 }
 
-.group-form select{
-    border-radius: 10px;
+#name{
+    width: 85%;
+}
+
+#city{
     width: 50%;
-    height: 25px;
-}
-
-.group-form input:focus, .group-form select:focus{
-    outline: none;
-}
-
-.group-form textarea{
-    width: 90%;
-    border-radius: 10px;
-    padding: 5px;
-}
-
-#publico, #privado{
-    width: 20px;
-    border: 1px solid #9ACEA7;
-}
-
-#zipCode{
-    width: 50%;
-}
-
-.group-form-check{
-    padding: 20px;
-}
-
-.group-form-check label{
-    font-size: 12px;
 }
 
 .short{
-    display: flex;
-    flex-direction: row;
-    width: 50%;
+    width: 35%;
 }
 
 .short label{
-    width: 30px;
+    width: 30%;
+}
+
+.short select{
+    border-radius: 10px;
+    width: 70%;
+}
+
+.adress input{
+    width: 20%;
+}
+
+.group-form textarea{
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 8px;
+    width: 95%;
+}
+
+.group-form-radio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.group-form-radio label{
+    font-size: 12px;
 }
 
 .btn-register{

@@ -163,24 +163,48 @@
     }
 
     /* REGISTER EVENT */
-    .register-form {
-        width: 50%;
+    .group-form {
+        height: 60px;
     }
 
-    .register-form form {
-        padding-left: 20px;
-    }
-
-    .register-container h1{
-        font-size: 20px;
-    }
-
-    .group-form label,
-    .group-form-check label {
+    .group-form label {
         font-size: 14px;
     }
 
-    .btn-register button{
+    .group-form input {
+        height: 25px;
+    }
+
+    #name {
+        width: 90%;
+    }
+
+    #city {
+        width: 60%;
+    }
+
+    .short label {
+        width: 40%;
+    }
+
+    .short select{
+        height: 25px;
+    }
+
+    .adress input {
+        width: 25%;
+    }
+    
+    .group-form-radio {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .group-form-radio label {
+        font-size: 14px;
+    }
+
+    .btn-register button {
         font-size: 14px;
     }
 
@@ -305,29 +329,35 @@
     }
 
     /* REGISTER EVENT */
-    .register-form {
-        width: 40%;
+    .group-form {
+        height: 70px;
     }
 
-    .register-form form {
-        padding-left: 30px;
-    }
-
-    .group-form label,
-    .group-form-check label {
+    .group-form label {
         font-size: 16px;
     }
 
-    .group-form input{
-        margin: 10px;
+    .group-form input {
         height: 30px;
     }
 
-    .group-form select{
+    .short label {
+        width: 50%;
+    }
+
+    .short select{
         height: 30px;
     }
 
-    .btn-register button{
+    .adress input {
+        width: 25%;
+    }
+
+    .group-form-radio label {
+        font-size: 16px;
+    }
+
+    .btn-register button {
         font-size: 16px;
     }
 }

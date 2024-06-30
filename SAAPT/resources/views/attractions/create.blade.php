@@ -7,10 +7,11 @@
 <section class="register-container flex">
     <div class="register-form">
         <h1>Cadastrar Ponto Turístico</h1>
-        <form action="">
+        <form action="/touristPoint" method="POST">
+            @csrf
             <div class="group-form">
                 <label for="name">Nome</label>
-                <input type="text" name="name" id="name">
+                <input type="text" name="name" id="name" required>
             </div>
 
             <div class="group-form">
@@ -18,7 +19,7 @@
                 <input type="text" name="city" id="city">
 
                 <div class="short">
-                    <label for="uf">UF</label>
+                    <label for="state">UF</label>
                     <select name="state" id="state">
                         <option value=""></option>
                         @foreach($ufs as $uf)
@@ -26,29 +27,36 @@
                         @endforeach
                     </select>
                 </div>
+
+            </div>
+
+            <div class="group-form adress">
+
+                <label for="street">Rua</label>
+                <input type="text" name="street" id="street">
+
+                <label for="district">Bairro</label>
+                <input type="text" name="district" id="district">
+
+                <label for="zipCode">CEP</label>
+                <input type="text" name="zipCode" id="zipCode">
             </div>
 
             <div class="group-form">
-                <label for="state">Bairro</label>
-                <input type="text" name="state" id="state">
-
-                <div class="short">
-                    <label for="zipCode">CEP</label>
-                    <input type="text" name="zipCode" id="zipCode">
-                </div>
+                <textarea name="description" id="description" placeholder="Descreva o ponto turístico..."></textarea>
             </div>
 
-            <div class="group-form">
-                <textarea name="description" id="description">Descrição</textarea>
-            </div>
-
-            <div class="group-form-check">
+            <div class="group-form-radio">
                 <label for="touristPointType">O ponto turístico é:</label>
-                <input type="checkbox" name="touristPointType[]" id="publico" value="publico">
-                <label for="publico">Público</label>
+                <div class="type">
+                    <input type="radio" name="touristPointType" id="publico" value="publico">
+                    <label for="publico">Público</label>
+                </div>
 
-                <input type="checkbox" name="touristPointType[]" id="privado" value="privado">
-                <label for="privado">Privado</label>
+                <div class="type">
+                    <input type="radio" name="touristPointType" id="privado" value="privado">
+                    <label for="privado">Privado</label>
+                </div>
             </div>
 
             <div class="btn-register flex">
