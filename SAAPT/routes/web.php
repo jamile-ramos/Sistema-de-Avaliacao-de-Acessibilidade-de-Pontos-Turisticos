@@ -6,7 +6,7 @@ use App\Http\Controllers\UserController;
 
 Route::get('/', [TouristPointController::class, 'index']);
 
-Route::get('/cadastrarPontoTuristico', [TouristPointController::class, 'TouristPoint']);
+Route::get('/cadastrarPontoTuristico', [TouristPointController::class, 'store']);
 
 Route::get('/cadastrarUsuario', [UserController::class, 'user']);
 

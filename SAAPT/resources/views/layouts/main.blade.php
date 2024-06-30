@@ -35,7 +35,7 @@
             <div class="img-logo">
                 <a href="/"><img src="/img/logo.png" alt="Logo Caminhos Livres"></a>
             </div>
-            <nav class="flex none-list">
+            <nav class="menu-check flex none-list">
                 <input type="checkbox" id="check">
                 <label for="check"><ion-icon name="menu-outline" id="icon-menu"></ion-icon></label>
                 <ul class="links">
