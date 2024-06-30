@@ -141,25 +141,47 @@
         height: 10px;
     }
 
-    .group-bar{
+    .group-bar {
         width: 100%;
     }
-    
-    .group-bar p{
+
+    .group-bar p {
         padding: 5px 0px 5px 0px;
         font-size: 12px;
     }
 
-    .number-percentage{
-        font-size: 14px;    
+    .number-percentage {
+        font-size: 14px;
     }
-    
-    .buttons{
+
+    .buttons {
         padding-top: 12px;
     }
 
-    .buttons button{
+    .buttons button {
         font-size: 12px;
+    }
+
+    /* REGISTER EVENT */
+    .register-form {
+        width: 50%;
+    }
+
+    .register-form form {
+        padding-left: 20px;
+    }
+
+    .register-container h1{
+        font-size: 20px;
+    }
+
+    .group-form label,
+    .group-form-check label {
+        font-size: 14px;
+    }
+
+    .btn-register button{
+        font-size: 14px;
     }
 
     /* FOOTER */
@@ -178,7 +200,7 @@
     }
 
     /* FRASE AVALIE JÁ*/
-    .rate-now p{
+    .rate-now p {
         font-size: 16px;
     }
 }
@@ -186,7 +208,7 @@
 @media (min-width: 1200px) {
 
     /* NAV */
-    label {
+    .menu-check label {
         display: none;
     }
 
@@ -251,7 +273,7 @@
         padding-bottom: 90%;
     }
 
-    .info{
+    .info {
         width: 50%;
     }
 
@@ -259,12 +281,12 @@
         font-size: 16px;
     }
 
-    .bar-all{
+    .bar-all {
         margin-top: 10px;
         gap: 8px;
     }
 
-    .group-bar p{
+    .group-bar p {
         font-size: 14px;
     }
 
@@ -272,14 +294,40 @@
         height: 12px;
     }
 
-    .buttons button{
+    .buttons button {
         font-size: 14px;
         padding: 12px;
     }
 
     /* FRASE AVALIE JÁ*/
-    .rate-now{
+    .rate-now {
         flex-direction: row;
     }
 
+    /* REGISTER EVENT */
+    .register-form {
+        width: 40%;
+    }
+
+    .register-form form {
+        padding-left: 30px;
+    }
+
+    .group-form label,
+    .group-form-check label {
+        font-size: 16px;
+    }
+
+    .group-form input{
+        margin: 10px;
+        height: 30px;
+    }
+
+    .group-form select{
+        height: 30px;
+    }
+
+    .btn-register button{
+        font-size: 16px;
+    }
 }

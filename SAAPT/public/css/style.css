@@ -430,7 +430,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 100px 0 100px 0;
+    margin: 20vh 0 20vh 0;
     flex-direction: column;
 }
 
@@ -439,15 +439,18 @@ main {
     border-radius: 20px;
     color: white;
     text-align: center;
+    padding: 15px;
+    width: 70%;
 }
 
 .register-container h1{
     padding: 20px;
+    font-size: 16px;
 }
 
 .register-form form{
     border-radius: 20px;
-    width: 400px;
+    width: 100%;
 }
 
 .group-form {
@@ -456,7 +459,6 @@ main {
     align-items: center; 
     height: 60px;
     gap: 8px;
-    padding-left:30px;
 }
 
 .group-form label {
@@ -472,10 +474,13 @@ main {
     width: 50%;
     height: 25px;
     border-radius: 10px;
+    padding: 10px;
 }
 
 .group-form select{
     border-radius: 10px;
+    width: 50%;
+    height: 25px;
 }
 
 .group-form input:focus, .group-form select:focus{
@@ -489,11 +494,41 @@ main {
 }
 
 #publico, #privado{
-    width: 10px;
+    width: 20px;
+    border: 1px solid #9ACEA7;
 }
 
 #zipCode{
-    width: 60px;
+    width: 50%;
+}
+
+.group-form-check{
+    padding: 20px;
+}
+
+.group-form-check label{
+    font-size: 12px;
+}
+
+.short{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+.short label{
+    width: 30px;
+}
+
+.btn-register{
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    font-size: 12px;
+}
+
+.btn-register button{
+    font-size: 12px;
 }
 
 /* FOOTER */
