@@ -14,23 +14,24 @@
 
     <section>
         <div class="filter-container flex column">
-            <p>Pontos turísticos acessíveis para pessoa com</p>
+            <p>Selecione os pontos turísticos por categoria de acessibilidade:</p>
             <form action="" method="get" id="filter-form">
-                <select name="pontos-turisticos" id="pontos-turisticos" onchange="document.getElementById('filter-form').submit()">
-                    <option value="todos">Todos</option>
-                    <option value="auditory">Deficiência Auditiva</option>
-                    <option value="physical">Deficiência física ou motora</option>
-                    <option value="visual">Deficiência Visual</option>
-                    <option value="mobility">Mobilidade reduzida</option>
+                <select name="filter-points" id="filter-points" onchange="document.getElementById('filter-form').submit()">
+                    <option value="best" {{ $filterSelect == 'best' ? 'selected' : '' }}>Melhores notas de acessibilidade</option>
+                    <option value="auditory" {{ $filterSelect == 'auditory' ? 'selected' : '' }}>Deficiência Auditiva</option>
+                    <option value="physical" {{ $filterSelect == 'physical' ? 'selected' : '' }}>Deficiência física ou motora</option>
+                    <option value="visual" {{ $filterSelect == 'visual' ? 'selected' : '' }}>Deficiência Visual</option>
+                    <option value="mobility" {{ $filterSelect == 'mobility' ? 'selected' : '' }}>Mobilidade reduzida</option>
                 </select>
 
                 <div class="btn-filter flex">
-                    <button type="submit" name="filter" value="todos">Todos</button>
-                    <button type="submit" name="filter" value="auditory">Deficiência auditiva</button>
-                    <button type="submit" name="filter" value="phisical">Deficiência física ou motora</button>
-                    <button type="submit" name="filter" value="visual">Deficiência visual</button>
-                    <button type="submit" name="filter" value="mobility">Mobilidade reduzida</button>
+                    <button type="submit" name="filter-buttons" value="best" class="{{ $filterButtons == 'best' ? 'selected' : '' }}">Melhores notas de acessibilidade</button>
+                    <button type="submit" name="filter-buttons" value="auditory" class="{{ $filterButtons == 'auditory' ? 'selected' : '' }}">Deficiência auditiva</button>
+                    <button type="submit" name="filter-buttons" value="physical" class="{{ $filterButtons == 'physical' ? 'selected' : '' }}">Deficiência física ou motora</button>
+                    <button type="submit" name="filter-buttons" value="visual" class="{{ $filterButtons == 'visual' ? 'selected' : '' }}">Deficiência visual</button>
+                    <button type="submit" name="filter-buttons" value="mobility" class="{{ $filterButtons == 'mobility' ? 'selected' : '' }}">Mobilidade reduzida</button>
                 </div>
+
             </form>
         </div>
     </section>
@@ -54,16 +55,16 @@
                                     <div class="bar">
                                         <div class="percentage" data-value="{{ $point->generalNotes }}"></div>
                                     </div>
-                                    <div class="number-percentage">{{ $point->generalNotes }}%</div>
+                                    <div class="number-percentage">{{ number_format($point->generalNotes, 1) }}%</div>
                                 </div>
                             </div>
                             <div class="group-bar">
                                 <p>Auditiva:</p>
                                 <div class="group-number">
                                     <div class="bar">
-                                        <div class="percentage" data-value="{{ $point->auditoryNote }}" ></div>
+                                        <div class="percentage" data-value="{{ $point->auditoryNote }}"></div>
                                     </div>
-                                    <div class="number-percentage">{{ $point->auditoryNote }}%</div>
+                                    <div class="number-percentage">{{ number_format($point->auditoryNote,1) }}%</div>
                                 </div>
                             </div>
                             <div class="group-bar">
@@ -72,25 +73,25 @@
                                     <div class="bar">
                                         <div class="percentage" data-value="{{ $point->visualNote }}"></div>
                                     </div>
-                                    <div class="number-percentage">{{ $point->visualNote }}%</div>
+                                    <div class="number-percentage">{{ number_format($point->visualNote, 1) }}%</div>
                                 </div>
                             </div>
                             <div class="group-bar">
                                 <p>Física e Motora:</p>
                                 <div class="group-number">
                                     <div class="bar">
-                                        <div class="percentage" data-value="{{ $point->physicalNote }}" ></div>
+                                        <div class="percentage" data-value="{{ $point->physicalNote }}"></div>
                                     </div>
-                                    <div class="number-percentage">{{ $point->physicalNote }}%</div>
+                                    <div class="number-percentage">{{ number_format($point->physicalNote,1) }}%</div>
                                 </div>
                             </div>
                             <div class="group-bar">
                                 <p>Mobilidade Reduzida:</p>
                                 <div class="group-number">
                                     <div class="bar">
-                                        <div class="percentage" data-value="{{ $point->mobilityNote }}" ></div>
+                                        <div class="percentage" data-value="{{ $point->mobilityNote }}"></div>
                                     </div>
-                                    <div class="number-percentage">{{ $point->mobilityNote }}%</div>
+                                    <div class="number-percentage">{{ number_format($point->mobilityNote,1) }}%</div>
                                 </div>
                             </div>
                         </div>

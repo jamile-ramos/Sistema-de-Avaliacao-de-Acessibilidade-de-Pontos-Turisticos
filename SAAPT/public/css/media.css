@@ -62,7 +62,7 @@
         font-size: 16px;
     }
 
-    #pontos-turisticos {
+    #filter-points {
         display: none;
     }
 
@@ -99,6 +99,12 @@
     .btn-filter button:focus {
         outline: none;
         box-shadow: 0 0 0 3px rgba(86, 208, 202, 0.5);
+    }
+
+    .btn-filter .selected {
+        background-color: #9ACEA7;
+        color: black;
+        border-color: #508E8B;
     }
 
     section {

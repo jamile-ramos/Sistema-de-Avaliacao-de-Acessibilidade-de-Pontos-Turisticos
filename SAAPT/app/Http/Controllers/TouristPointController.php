@@ -11,29 +11,38 @@ class TouristPointController extends Controller
     {
         $search = request('search');
         $filterSelect = request('filter-points');
-        $filterButtons = request('filter');
+        $filterButtons = request('filter-buttons');
+        $points = TouristPoint::query(); //iniciando a consulta
 
-        if($search){
+        if ($search) {
             $points = TouristPoint::where(
-                'name', 'like', '%'. $search . '%'
+                'name',
+                'like',
+                '%' . $search . '%'
             )->get();
-        }else{
-            $points = TouristPoint::all();
+        } else if ($filterSelect && $filterSelect != 'best') {
+            $points->orderBy($filterSelect . 'Note', 'desc');
+        } else if ($filterButtons && $filterButtons != 'best') {
+            $points->orderBy($filterButtons . 'Note', 'desc');
+        }else {
+            $points->orderBy('generalNotes', 'desc');
         }
 
-        /*if($filterSelect && $filterSelect != 'todos'){
-            $points = TouristPoint::where(
-                ''
-            )
-        }*/
+        $points = $points->limit(10)->get();
 
-        return view('welcome', 
-                            ['points' => $points],
-                            ['search' => $search]
-                        );
+        return view(
+            'welcome',
+            [
+                'points' => $points,
+                'search' => $search,
+                'filterSelect' => $filterSelect,
+                'filterButtons' => $filterButtons
+            ]
+        );
     }
 
-    public function create(){
+    public function create()
+    {
         $ufs = ['AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MT', 'MS', 'MG', 'PA', 'PB', 'PR', 'PE', 'PI', 'RJ', 'RN', 'RS', 'RO', 'RR', 'SC', 'SP', 'SE', 'TO'];
 
         return view('attractions.create', ['ufs' => $ufs]);
