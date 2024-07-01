@@ -98,8 +98,8 @@
                     </div>
                 </div>
                 <div class="buttons flex">
-                    <button>Avaliar</button>
-                    <button>Mais informações</button>
+                    <button><a href="#">Avaliar</a></button>
+                    <button><a href="/touristPoint/show/{{ $point->id }}">Mais informações</a></button>
                 </div>
             </div>
             @endforeach

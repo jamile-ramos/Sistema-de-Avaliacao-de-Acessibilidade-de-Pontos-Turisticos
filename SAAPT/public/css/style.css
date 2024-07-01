@@ -370,13 +370,18 @@ main {
 }
 
 .buttons button{
-    font-size: 10px;
     text-align: center;
     border-radius: 20px;
     background-color: #E75321;
-    color: white;
     padding: 5px;
     box-shadow: 2px 2px 2px rgb(106, 106, 106);
+}
+
+.buttons button a{
+    font-size: 10px;
+    outline: none;
+    text-decoration: none;
+    color: white;
 }
 
 .buttons button:hover{

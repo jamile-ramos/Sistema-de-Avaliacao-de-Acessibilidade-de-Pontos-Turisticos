@@ -23,11 +23,11 @@
         <div class="location flex">
             <p><ion-icon name="location-outline"></ion-icon>Guanambi</p>
             <div class="networks flex">
-                <div class="circle-icon"><ion-icon name="logo-facebook"></ion-icon></div>
-                <div class="circle-icon"><ion-icon name="logo-instagram"></ion-icon></div>
-                <div class="circle-icon"><ion-icon name="mail-outline"></ion-icon></div>
-                <div class="circle-icon"><ion-icon name="call-outline"></ion-icon></div>
-                <div class="circle-icon"><ion-icon name="logo-whatsapp"></ion-icon></div>
+                <div class="circle-icon"><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></div>
+                <div class="circle-icon"><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></div>
+                <div class="circle-icon"><a href="#"><ion-icon name="mail-outline"></ion-icon></a></div>
+                <div class="circle-icon"><a href="#"><ion-icon name="call-outline"></ion-icon></a></div>
+                <div class="circle-icon"><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></div>
             </div>
         </div>
 
@@ -41,7 +41,7 @@
                 <ul class="links">
                     <li id="back"><a href="/">Avaliar</a>
                     <ion-icon name="arrow-forward-outline" id="back-icon"></ion-icon></li>
-                    <li><a href="/cadastrarPontoTuristico">Cadastrar ponto turístico</a></li>
+                    <li><a href="/touristPoint/create">Cadastrar ponto turístico</a></li>
                     <li><a href="/">Contraste</a></li>
                     <li><a href="/">+A</a></li>
                     <li><a href="/">-A</a></li>

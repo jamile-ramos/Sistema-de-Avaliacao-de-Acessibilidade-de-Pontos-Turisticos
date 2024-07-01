@@ -88,12 +88,11 @@
         font-size: 14px;
         border: none;
         cursor: pointer;
-        transition: background-color 0.3s ease, color 0.3s ease;
+        transition: transform 0.3s ease;
     }
-
+    
     .btn-filter button:hover {
-        background: #9ACEA7;
-        color: black;
+        transform: scale(1.1);
     }
 
     .btn-filter button:focus {
@@ -164,7 +163,7 @@
         padding-top: 12px;
     }
 
-    .buttons button {
+    .buttons button a{
         font-size: 12px;
     }
 
@@ -324,9 +323,12 @@
         height: 12px;
     }
 
-    .buttons button {
-        font-size: 14px;
+    .buttons button{
         padding: 12px;
+    }
+
+    .buttons button a{
+        font-size: 14px;
     }
 
     /* FRASE AVALIE JÁ*/
