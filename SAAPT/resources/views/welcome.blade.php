@@ -15,21 +15,21 @@
     <section>
         <div class="filter-container flex column">
             <p>Pontos turísticos acessíveis para pessoa com</p>
-            <form action="/" method="get">
-                <select name="pontos-turisticos" id="pontos-turisticos">
+            <form action="" method="get" id="filter-form">
+                <select name="pontos-turisticos" id="pontos-turisticos" onchange="document.getElementById('filter-form').submit()">
                     <option value="todos">Todos</option>
-                    <option value="auditiva">Deficiência Auditiva</option>
-                    <option value="fisica">Deficiência física ou motora</option>
+                    <option value="auditory">Deficiência Auditiva</option>
+                    <option value="physical">Deficiência física ou motora</option>
                     <option value="visual">Deficiência Visual</option>
-                    <option value="mobReduzida">Mobilidade reduzida</option>
+                    <option value="mobility">Mobilidade reduzida</option>
                 </select>
 
                 <div class="btn-filter flex">
                     <button type="submit" name="filter" value="todos">Todos</button>
-                    <button type="submit" name="filter" value="auditiva">Deficiência auditiva</button>
-                    <button type="submit" name="filter" value="fisica">Deficiência física ou motora</button>
+                    <button type="submit" name="filter" value="auditory">Deficiência auditiva</button>
+                    <button type="submit" name="filter" value="phisical">Deficiência física ou motora</button>
                     <button type="submit" name="filter" value="visual">Deficiência visual</button>
-                    <button type="submit" name="filter" value="mobReduzida">Mobilidade reduzida</button>
+                    <button type="submit" name="filter" value="mobility">Mobilidade reduzida</button>
                 </div>
             </form>
         </div>

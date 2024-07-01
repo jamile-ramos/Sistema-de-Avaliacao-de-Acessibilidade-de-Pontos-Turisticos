@@ -41,7 +41,7 @@
                 <ul class="links">
                     <li id="back"><a href="/">Avaliar</a>
                     <ion-icon name="arrow-forward-outline" id="back-icon"></ion-icon></li>
-                    <li><a href="/touristPoint">Cadastrar ponto turístico</a></li>
+                    <li><a href="/cadastrarPontoTuristico">Cadastrar ponto turístico</a></li>
                     <li><a href="/">Contraste</a></li>
                     <li><a href="/">+A</a></li>
                     <li><a href="/">-A</a></li>

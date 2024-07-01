@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     percentages.forEach(percentage =>{
         let value = parseFloat(percentage.dataset.value);
         value *= 10;
-        console.log(`${value}%`)
+        //console.log(`${value}%`)
         percentage.style.width = `${value}%`
     })
 });

@@ -170,6 +170,7 @@ main {
     border-radius: 20px;
     background: #508E8B;
     border: 1px solid #508E8B;
+    color: white;
 }
 #search::placeholder{
     color: #fff;
@@ -229,7 +230,6 @@ main {
     margin: 0 auto;
     flex-wrap: wrap;
     z-index: 1;
-    margin-top: 50px;
 }
 
 .card {
@@ -468,6 +468,11 @@ main {
 .group-form input{
     height: 20px;
     border-radius: 10px;
+    padding: 10px;
+}
+
+.group-form input:focus{
+    outline: none;
 }
 
 #name{
@@ -491,6 +496,10 @@ main {
     width: 70%;
 }
 
+.short select:focus{
+    outline: none;
+}
+
 .adress input{
     width: 20%;
 }
@@ -500,6 +509,10 @@ main {
     border-radius: 10px;
     padding: 8px;
     width: 95%;
+}
+
+.group-form textarea:focus{
+    outline: none;
 }
 
 .group-form-radio{

@@ -9,16 +9,38 @@ class TouristPointController extends Controller
 {
     public function index()
     {
+        $search = request('search');
+        $filterSelect = request('filter-points');
+        $filterButtons = request('filter');
 
-        $points = TouristPoint::all();
-        return view('welcome', ['points' => $points]);
+        if($search){
+            $points = TouristPoint::where(
+                'name', 'like', '%'. $search . '%'
+            )->get();
+        }else{
+            $points = TouristPoint::all();
+        }
+
+        /*if($filterSelect && $filterSelect != 'todos'){
+            $points = TouristPoint::where(
+                ''
+            )
+        }*/
+
+        return view('welcome', 
+                            ['points' => $points],
+                            ['search' => $search]
+                        );
+    }
+
+    public function create(){
+        $ufs = ['AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MT', 'MS', 'MG', 'PA', 'PB', 'PR', 'PE', 'PI', 'RJ', 'RN', 'RS', 'RO', 'RR', 'SC', 'SP', 'SE', 'TO'];
+
+        return view('attractions.create', ['ufs' => $ufs]);
     }
 
     public function store(Request $request)
     {
-
-        $ufs = ['AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MT', 'MS', 'MG', 'PA', 'PB', 'PR', 'PE', 'PI', 'RJ', 'RN', 'RS', 'RO', 'RR', 'SC', 'SP', 'SE', 'TO'];
-
         $point = new TouristPoint();
 
         $point->name = $request->name;
@@ -32,6 +54,6 @@ class TouristPointController extends Controller
 
         $point->save();
 
-        return view('attractions.create', ['ufs' => $ufs]);
+        return redirect('/');
     }
 }
