@@ -180,13 +180,6 @@ main {
     outline: none;
 }
 
-.filter-container p{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 12px;
-}
-
 .filter-container form{
     width: 100%;
     height: 50px;
@@ -357,6 +350,8 @@ main {
     margin-left: 5px;
 
 }
+
+/* BUTTON CARD */ 
 
 .buttons {
     /*background: yellow;*/

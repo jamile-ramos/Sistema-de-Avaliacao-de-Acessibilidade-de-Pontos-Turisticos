@@ -12,32 +12,30 @@ class TouristPointController extends Controller
         $search = request('search');
         $filterSelect = request('filter-points', 'best');
         $filterButtons = request('filter-buttons', 'best');
-        $points = TouristPoint::query(); //iniciando a consulta
+        $points = TouristPoint::query(); // Iniciando a consulta
 
-        //search
+        // Lógica de busca
         if ($search) {
-            $points = TouristPoint::where('name', 'like', '%' . $search . '%');
+            $points = $points->where('name', 'like', '%' . $search . '%');
         }
-        //filters
-        if ($filterSelect && $filterSelect != 'best') {
-            $points = TouristPoint::where('category', '=', (int)$filterSelect);
-        } else if ($filterButtons && $filterButtons != 'best') {
-            $points = TouristPoint::where('category', '=', (int)$filterButtons);
+
+        // Lógica de filtros
+        if ($filterSelect >= 0 && $filterSelect != 'best') {
+            $points = $points->where('category', '=', (int)$filterSelect);
+        } elseif ($filterButtons >= 0 && $filterButtons != 'best') {
+            $points = $points->where('category', '=', (int)$filterButtons);
         } else {
-            $points->orderBy('generalNotes', 'desc');
+            $points = $points->orderBy('generalNotes', 'desc')->limit(9);
         }
 
-        $points = $points->limit(9)->get();
+        $points = $points->get();
 
-        return view(
-            'welcome',
-            [
-                'points' => $points,
-                'search' => $search,
-                'filterSelect' => $filterSelect,
-                'filterButtons' => $filterButtons
-            ]
-        );
+        return view('welcome', [
+            'points' => $points,
+            'search' => $search,
+            'filterSelect' => $filterSelect,
+            'filterButtons' => $filterButtons
+        ]);
     }
 
     public function create()

@@ -24,7 +24,6 @@
 
     <section>
         <div class="filter-container flex column">
-            <p>Selecione os tipos de estabelecimento:</p>
             <form action="" method="get" id="filter-form">
                 <select name="filter-points" id="filter-points" onchange="document.getElementById('filter-form').submit()">
                     <option value="best" {{ $filterSelect == 'best' ? 'selected' : '' }}>Melhores notas de acessibilidade</option>
@@ -35,11 +34,11 @@
                 </select>
 
                 <div class="btn-filter flex">
-                    <button type="submit" name="filter-buttons" value="best" class="{{ $filterButtons == 'best' ? 'selected' : '' }}">Melhores notas de acessibilidade</button>
-                    <button type="submit" name="filter-buttons" value="0" class="{{ $filterButtons == '0' ? 'selected' : '' }}">Monumentos e Edifícios Históricos</button>
-                    <button type="submit" name="filter-buttons" value="1" class="{{ $filterButtons == '1' ? 'selected' : '' }}">Museus e Galerias de Arte</button>
-                    <button type="submit" name="filter-buttons" value="2" class="{{ $filterButtons == '2' ? 'selected' : '' }}">Parques e Jardins</button>
-                    <button type="submit" name="filter-buttons" value="3" class="{{ $filterButtons == '3' ? 'selected' : '' }}">Praias e Áreas Costeiras</button>
+                    <button type="submit" name="filter-buttons" value='best' class="{{ $filterButtons == 'best' ? 'selected' : '' }}">Melhores notas de acessibilidade</button>
+                    <button type="submit" name="filter-buttons" value='0' class="{{ $filterButtons == '0' ? 'selected' : '' }}">Monumentos e Edifícios Históricos</button>
+                    <button type="submit" name="filter-buttons" value='1' class="{{ $filterButtons == '1' ? 'selected' : '' }}">Museus e Galerias de Arte</button>
+                    <button type="submit" name="filter-buttons" value='2' class="{{ $filterButtons == '2' ? 'selected' : '' }}">Parques e Jardins</button>
+                    <button type="submit" name="filter-buttons" value='3' class="{{ $filterButtons == '3' ? 'selected' : '' }}">Praias e Áreas Costeiras</button>
                 </div>
 
             </form>
