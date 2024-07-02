@@ -67,3 +67,16 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 })
+
+// Js para sumir a msg
+document.addEventListener('DOMContentLoaded', function(){
+    const msg = document.querySelector('.msg, .msg-erro')
+    if(msg){
+        setTimeout(()=>{
+            msg.classList.add('fade-out')
+            setTimeout(()=>{
+                msg.remove()
+            }, 2000)
+        }, 4000)
+    }
+})

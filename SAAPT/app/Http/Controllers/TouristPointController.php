@@ -16,14 +16,14 @@ class TouristPointController extends Controller
 
         //search
         if ($search) {
-            $points = TouristPoint::where('name','like','%' . $search . '%');
-        } 
+            $points = TouristPoint::where('name', 'like', '%' . $search . '%');
+        }
         //filters
         if ($filterSelect && $filterSelect != 'best') {
-            $points->orderBy($filterSelect . 'Note', 'desc');
+            $points = TouristPoint::where('category', '=', (int)$filterSelect);
         } else if ($filterButtons && $filterButtons != 'best') {
-            $points->orderBy($filterButtons . 'Note', 'desc');
-        }else {
+            $points = TouristPoint::where('category', '=', (int)$filterButtons);
+        } else {
             $points->orderBy('generalNotes', 'desc');
         }
 
@@ -47,7 +47,8 @@ class TouristPointController extends Controller
         return view('attractions.create', ['ufs' => $ufs]);
     }
 
-    public function show($id){
+    public function show($id)
+    {
         $point = TouristPoint::findOrFail($id);
 
         return view('attractions.show', ['point' => $point]);
@@ -56,18 +57,30 @@ class TouristPointController extends Controller
     public function store(Request $request)
     {
         $point = new TouristPoint();
+        $attractions = TouristPoint::all();
 
-        $point->name = $request->name;
-        $point->city = $request->city;
-        $point->state = $request->state;
-        $point->street = $request->street;
-        $point->district = $request->district;
-        $point->zipCode = $request->zipCode;
-        $point->description = $request->description;
-        $point->touristPointType = ($request->touristPointType == 'publico') ? 0 : 1;
+        $erro = "";
+        foreach ($attractions as $attraction) {
+            if ($attraction->name == $request->name) {
+                $erro = true;
+                break;
+            }
+        }
 
-        $point->save();
-
-        return redirect('/');
+        if ($erro) {
+            return redirect('/')->with('msg-erro', 'Ponto turístico já cadastrado!');
+        } else {
+            $point->name = $request->name;
+            $point->city = $request->city;
+            $point->state = $request->state;
+            $point->street = $request->street;
+            $point->district = $request->district;
+            $point->zipCode = $request->zipCode;
+            $point->description = $request->description;
+            $point->category = (int)$request->category;
+            $point->accessType = (int)$request->acessType;
+            $point->save();
+            return redirect('/')->with('msg', 'Ponto turístico cadastrado com sucesso!');
+        }
     }
 }

@@ -369,22 +369,20 @@ main {
     left: 0;
 }
 
-.buttons button{
+.buttons a{
     text-align: center;
     border-radius: 20px;
     background-color: #E75321;
     padding: 5px;
     box-shadow: 2px 2px 2px rgb(106, 106, 106);
-}
-
-.buttons button a{
     font-size: 10px;
     outline: none;
     text-decoration: none;
     color: white;
 }
 
-.buttons button:hover{
+
+.buttons a:hover{
     background: #fb6c3d;
 }
 
@@ -468,6 +466,7 @@ main {
 .group-form label{
     font-size: 12px;
     padding: 0 5px 0 5px;
+    text-align: start;
 }
 
 .group-form input{
@@ -481,7 +480,18 @@ main {
 }
 
 #name{
-    width: 85%;
+    width: 50%;
+}
+
+#category{
+    width: 40%;
+    border-radius: 10px;
+    height: 20px;
+    background: white;
+}
+
+#category:focus{
+    outline: none;
 }
 
 #city{
@@ -499,6 +509,7 @@ main {
 .short select{
     border-radius: 10px;
     width: 70%;
+    background: white;
 }
 
 .short select:focus{
@@ -542,6 +553,33 @@ main {
 
 .btn-register button{
     font-size: 12px;
+}
+
+/*  TOURIST ATTRACTION REGISTRATION MESSAGE */
+.msg, .msg-erro{
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+    transition: opacity 2s ease-in-out;
+    opacity: 1;
+    font-size: 10px;
+}
+
+.msg{
+    background-color: #D4EDDA;
+    color: #155724;
+    border: 1px solid #C3E6CB;
+}
+
+.msg-erro{
+    background-color: #f36b6b;
+    color: #ffffff;
+    border: 1px solid #ff0000;
+}
+
+.msg.fade-out {
+    opacity: 0;
 }
 
 /* FOOTER */

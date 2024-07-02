@@ -4,6 +4,11 @@
 
 @section('content')
 
-<h1>Mais informações</h1>
+<section>
+    <div>
+        <h1>nome</h1>
+        
+    </div>
+</section>
 
 @endsection

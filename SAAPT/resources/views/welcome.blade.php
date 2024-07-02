@@ -5,6 +5,16 @@
 @section('content')
 
 <main>
+    @if(session('msg'))
+    <div class="msg">
+        <p>{{ session('msg') }}</p>
+    </div>
+    @endif
+    @if(session('msg-erro'))
+    <div class="msg-erro">
+        <p>{{ session('msg-erro') }}</p>
+    </div>
+    @endif
     <div id="search-container" class="flex">
         <h1>Descubra pontos turísticos incríveis e acessíveis para você!</h1>
         <form action="/" method="get">
@@ -14,22 +24,22 @@
 
     <section>
         <div class="filter-container flex column">
-            <p>Selecione os pontos turísticos por categoria de acessibilidade:</p>
+            <p>Selecione os tipos de estabelecimento:</p>
             <form action="" method="get" id="filter-form">
                 <select name="filter-points" id="filter-points" onchange="document.getElementById('filter-form').submit()">
                     <option value="best" {{ $filterSelect == 'best' ? 'selected' : '' }}>Melhores notas de acessibilidade</option>
-                    <option value="auditory" {{ $filterSelect == 'auditory' ? 'selected' : '' }}>Deficiência Auditiva</option>
-                    <option value="physical" {{ $filterSelect == 'physical' ? 'selected' : '' }}>Deficiência física ou motora</option>
-                    <option value="visual" {{ $filterSelect == 'visual' ? 'selected' : '' }}>Deficiência Visual</option>
-                    <option value="mobility" {{ $filterSelect == 'mobility' ? 'selected' : '' }}>Mobilidade reduzida</option>
+                    <option value="0" {{ $filterSelect == '0' ? 'selected' : '' }}>Monumentos e Edifícios Históricos</option>
+                    <option value="1" {{ $filterSelect == '1' ? 'selected' : '' }}>Museus e Galerias de Arte</option>
+                    <option value="2" {{ $filterSelect == '2' ? 'selected' : '' }}>Parques e Jardins</option>
+                    <option value="3" {{ $filterSelect == '3' ? 'selected' : '' }}>Praias e Áreas Costeiras</option>
                 </select>
 
                 <div class="btn-filter flex">
                     <button type="submit" name="filter-buttons" value="best" class="{{ $filterButtons == 'best' ? 'selected' : '' }}">Melhores notas de acessibilidade</button>
-                    <button type="submit" name="filter-buttons" value="auditory" class="{{ $filterButtons == 'auditory' ? 'selected' : '' }}">Deficiência auditiva</button>
-                    <button type="submit" name="filter-buttons" value="physical" class="{{ $filterButtons == 'physical' ? 'selected' : '' }}">Deficiência física ou motora</button>
-                    <button type="submit" name="filter-buttons" value="visual" class="{{ $filterButtons == 'visual' ? 'selected' : '' }}">Deficiência visual</button>
-                    <button type="submit" name="filter-buttons" value="mobility" class="{{ $filterButtons == 'mobility' ? 'selected' : '' }}">Mobilidade reduzida</button>
+                    <button type="submit" name="filter-buttons" value="0" class="{{ $filterButtons == '0' ? 'selected' : '' }}">Monumentos e Edifícios Históricos</button>
+                    <button type="submit" name="filter-buttons" value="1" class="{{ $filterButtons == '1' ? 'selected' : '' }}">Museus e Galerias de Arte</button>
+                    <button type="submit" name="filter-buttons" value="2" class="{{ $filterButtons == '2' ? 'selected' : '' }}">Parques e Jardins</button>
+                    <button type="submit" name="filter-buttons" value="3" class="{{ $filterButtons == '3' ? 'selected' : '' }}">Praias e Áreas Costeiras</button>
                 </div>
 
             </form>
@@ -98,8 +108,8 @@
                     </div>
                 </div>
                 <div class="buttons flex">
-                    <button><a href="#">Avaliar</a></button>
-                    <button><a href="/touristPoint/show/{{ $point->id }}">Mais informações</a></button>
+                    <a href="#">Avaliar</a>
+                    <a href="/touristPoint/show/{{ $point->id }}">Mais informações</a>
                 </div>
             </div>
             @endforeach

@@ -12,13 +12,14 @@ return new class extends Migration
             $table->id()->autoIncrement();
             $table->timestamps();
             $table->string('name', 100)->nullable(false); //define como not null
-            $table->integer('touristPointType')->comment('0 - publico e 1 - privado'); // define comentário
+            $table->integer('accessType')->comment('0 - publico e 1 - privado'); // define comentário
+            $table->integer('category')->comment('0 - monuments, 1 - museums, 2 - parks, 3 - beaches');
             $table->string('city', 50);
             $table->string('state', 2);
             $table->string('street', 100);
             $table->string('district', 50);
             $table->string('zipCode', 8);
-            $table->text('description');      
+            $table->text('description');    
             $table->double('generalNotes')->nullable();
             $table->double('visualNote')->nullable();
             $table->double('auditoryNote')->nullable();

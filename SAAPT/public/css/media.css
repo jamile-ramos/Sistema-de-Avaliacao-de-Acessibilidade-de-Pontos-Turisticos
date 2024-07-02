@@ -90,7 +90,7 @@
         cursor: pointer;
         transition: transform 0.3s ease;
     }
-    
+
     .btn-filter button:hover {
         transform: scale(1.1);
     }
@@ -163,7 +163,7 @@
         padding-top: 12px;
     }
 
-    .buttons button a{
+    .buttons button a {
         font-size: 12px;
     }
 
@@ -180,8 +180,8 @@
         height: 25px;
     }
 
-    #name {
-        width: 90%;
+    #category {
+        height: 25px;
     }
 
     #city {
@@ -192,14 +192,14 @@
         width: 40%;
     }
 
-    .short select{
+    .short select {
         height: 25px;
     }
 
     .adress input {
         width: 25%;
     }
-    
+
     .group-form-radio {
         flex-direction: row;
         gap: 10px;
@@ -211,6 +211,11 @@
 
     .btn-register button {
         font-size: 14px;
+    }
+
+    /*  TOURIST ATTRACTION REGISTRATION MESSAGE */
+    .msg, .msg-erro{
+        font-size: 12px;
     }
 
     /* FOOTER */
@@ -323,11 +328,11 @@
         height: 12px;
     }
 
-    .buttons button{
+    .buttons button {
         padding: 12px;
     }
 
-    .buttons button a{
+    .buttons button a {
         font-size: 14px;
     }
 
@@ -337,6 +342,10 @@
     }
 
     /* REGISTER EVENT */
+    .register-form {
+        width: 50%;
+    }
+
     .group-form {
         height: 70px;
     }
@@ -353,7 +362,12 @@
         width: 50%;
     }
 
-    .short select{
+    .short select {
+        height: 30px;
+    }
+
+    #category {
+        width: 35%;
         height: 30px;
     }
 
@@ -367,5 +381,9 @@
 
     .btn-register button {
         font-size: 16px;
+    }
+
+    .msg, .msg-erro {
+        font-size: 14px;
     }
 }
