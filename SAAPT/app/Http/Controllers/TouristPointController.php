@@ -77,6 +77,7 @@ class TouristPointController extends Controller
             $point->description = $request->description;
             $point->category = (int)$request->category;
             $point->accessType = (int)$request->acessType;
+            $point->owner = (int)$request->owner;
             $point->save();
             return redirect('/')->with('msg', 'Ponto turístico cadastrado com sucesso!');
         }

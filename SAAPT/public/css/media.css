@@ -166,35 +166,28 @@
 
     /* REGISTER EVENT */
     .group-form {
-        height: 60px;
+        height: 25px;
+        font-size: 14px;
     }
 
     .group-form label {
         font-size: 14px;
     }
 
-    .group-form input {
-        height: 25px;
+    .group-form input{
+        font-size: 14px;
     }
 
-    #category {
-        height: 25px;
+    #state{
+        width: 70%;
     }
 
-    #city {
-        width: 60%;
+    #category{
+        width: 55%;
     }
 
-    .short label {
-        width: 40%;
-    }
-
-    .short select {
-        height: 25px;
-    }
-
-    .adress input {
-        width: 25%;
+    .description textarea {
+        font-size: 14px;
     }
 
     .group-form-radio {
@@ -332,39 +325,15 @@
 
     /* REGISTER EVENT */
     .register-form {
-        width: 50%;
+        width: 40%;
     }
 
     .group-form {
-        height: 70px;
-    }
-
-    .group-form label {
+        height: 30px;
         font-size: 16px;
     }
 
-    .group-form input {
-        height: 30px;
-    }
-
-    .short label {
-        width: 50%;
-    }
-
-    .short select {
-        height: 30px;
-    }
-
-    #category {
-        width: 35%;
-        height: 30px;
-    }
-
-    .adress input {
-        width: 25%;
-    }
-
-    .group-form-radio label {
+    .group-form label,  .group-form input, .description textarea, .group-form-radio label{
         font-size: 16px;
     }
 

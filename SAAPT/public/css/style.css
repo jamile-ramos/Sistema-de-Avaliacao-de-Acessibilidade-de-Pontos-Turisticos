@@ -20,7 +20,7 @@ body {
     position: relative;
 }
 
-.container-header{
+.container-header {
     background: #508E8B;
 }
 
@@ -122,12 +122,12 @@ nav ul li {
     border-bottom: 1px solid #fff;
 }
 
-li#back{
+li#back {
     display: flex;
     justify-content: space-between;
 }
 
-li#back ion-icon{
+li#back ion-icon {
     font-size: 16px;
     color: #fff;
     margin-right: 10%;
@@ -141,30 +141,34 @@ li#back ion-icon{
 section {
     margin-bottom: 20px;
 }
+
 main {
     /*min-height: 100vh;*/
     padding-bottom: 100px;
 }
 
-#search-container{
+#search-container {
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 20px;
     text-align: center;
 }
-#search-container h1{
+
+#search-container h1 {
     font-size: 16px;
     padding: 10px;
 }
-#search-container form{
+
+#search-container form {
     width: 100%;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#search{
+
+#search {
     padding: 8px;
     width: 80%;
     border-radius: 20px;
@@ -172,22 +176,25 @@ main {
     border: 1px solid #508E8B;
     color: white;
 }
-#search::placeholder{
+
+#search::placeholder {
     color: #fff;
     font-size: 12px;
 }
-#search:focus{
+
+#search:focus {
     outline: none;
 }
 
-.filter-container form{
+.filter-container form {
     width: 100%;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.filter-container form select{
+
+.filter-container form select {
     width: 80%;
     border-radius: 20px;
     padding: 5px;
@@ -203,6 +210,7 @@ main {
     transition: border-color 0.3s;
     text-align: center;
 }
+
 .filter-container form select {
     background-image: url('data:image/svg+xml;utf8,<svg fill="gray" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M7 10l5 5 5-5z"/></svg>');
     background-repeat: no-repeat;
@@ -210,16 +218,16 @@ main {
     background-position-y: center;
 }
 
-.btn-filter{
+.btn-filter {
     display: none;
 }
 
 /* CARD*/
-.container-card{
+.container-card {
     display: flex;
     justify-content: space-around;
     align-items: start;
-    max-width: 1200px; 
+    max-width: 1200px;
     margin: 0 auto;
     flex-wrap: wrap;
     z-index: 1;
@@ -240,7 +248,7 @@ main {
     z-index: 1;
 }
 
-.group-touristPoint{
+.group-touristPoint {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -252,7 +260,7 @@ main {
     justify-content: center;
     align-items: center;
     width: 50%;
-    max-width: 300px            ;
+    max-width: 300px;
     height: 100%;
     top: 0px;
     left: 0;
@@ -263,14 +271,14 @@ main {
     padding-bottom: 80%;
     background-image: url(/img/teste.jpg);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     border-radius: 50%;
     margin-top: 5px;
     border: 2px solid white;
 }
 
-.title-card{
+.title-card {
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -294,7 +302,7 @@ main {
     padding-top: 10px;
 }
 
-.group-bar{
+.group-bar {
     width: 100%;
     /*background: red;*/
     display: flex;
@@ -309,7 +317,7 @@ main {
     font-size: 10px;
 }
 
-.bar-all{
+.bar-all {
     width: 100%;
     height: 70%;
     justify-content: center;
@@ -318,7 +326,7 @@ main {
     padding: 15px 10px 0px 0px;
 }
 
-.bar{
+.bar {
     width: 80%;
     height: 6px;
     background: white;
@@ -328,7 +336,7 @@ main {
     align-items: center;
 }
 
-.percentage{
+.percentage {
     width: 50%;
     height: 80%;
     background: #E75321;
@@ -336,13 +344,13 @@ main {
     margin-left: 1px;
 }
 
-.group-number{
+.group-number {
     width: 100%;
     display: flex;
     flex-direction: row;
 }
 
-.number-percentage{
+.number-percentage {
     width: 20%;
     text-align: center;
     font-size: 9px;
@@ -351,7 +359,7 @@ main {
 
 }
 
-/* BUTTON CARD */ 
+/* BUTTON CARD */
 
 .buttons {
     /*background: yellow;*/
@@ -364,7 +372,7 @@ main {
     left: 0;
 }
 
-.buttons a{
+.buttons a {
     text-align: center;
     border-radius: 20px;
     background-color: #E75321;
@@ -377,12 +385,12 @@ main {
 }
 
 
-.buttons a:hover{
+.buttons a:hover {
     background: #fb6c3d;
 }
 
 /* FRASE AVALIE JÁ*/
-.rate-now{
+.rate-now {
     background: #9ACEA7;
     width: 100%;
     display: flex;
@@ -393,7 +401,7 @@ main {
     margin-top: 50px;
 }
 
-.rate-now p{
+.rate-now p {
     padding: 20px;
     text-align: center;
     font-size: 14px;
@@ -401,7 +409,7 @@ main {
 
 .btn {
     width: 150px;
-    background:#E75321;
+    background: #E75321;
     padding: 10px;
     border-radius: 20px;
     color: white;
@@ -432,7 +440,7 @@ main {
     flex-direction: column;
 }
 
-.register-form{
+.register-form {
     background: #508E8B;
     border-radius: 20px;
     color: white;
@@ -441,117 +449,131 @@ main {
     width: 70%;
 }
 
-.register-container h1{
+.register-container h1 {
     padding: 20px;
     font-size: 16px;
 }
 
-.register-form form{
+.register-form form {
     border-radius: 20px;
     width: 100%;
+    padding: 10px;
 }
 
 .group-form{
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-    height: 50px;
-}
-
-.group-form label{
-    font-size: 12px;
-    padding: 0 5px 0 5px;
-    text-align: start;
-}
-
-.group-form input{
     height: 20px;
     border-radius: 10px;
-    padding: 10px;
+    background: white;
+    margin: 15px 0 15px 0;
+    width: 48%;
+}
+
+.group-form-two {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.group-form ion-icon,
+.short ion-icon {
+    color: #508E8B;
+    margin-right: 3px;
+    font-size: 15px;
+}
+
+.group-form label {
+    color: #508E8B;
+    font-size: 12px;
+}
+
+.group-form input {
+    width: 70%;
+    border-radius: 10px;
+    font-size: 12px;
+    padding-left: 5px;
 }
 
 .group-form input:focus{
     outline: none;
 }
 
-#name{
-    width: 50%;
+.group-form input::placeholder,
+#description::placeholder {
+    color: #508E8B;
 }
 
-#category{
-    width: 40%;
-    border-radius: 10px;
-    height: 20px;
+#category {
+    width: 30%;
     background: white;
+    border-radius: 10px;
 }
 
-#category:focus{
+#category:focus,
+#state:focus,
+#description:focus {
     outline: none;
 }
 
-#city{
-    width: 50%;
+.short {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
-.short{
-    width: 35%;
+#state {
+    width: 60%;
+    background: white;
+    border-radius: 10px;
 }
 
-.short label{
+.adress {
+    justify-content: space-between;
+}
+
+.adress .group-form {
     width: 30%;
 }
 
-.short select{
+.description textarea {
+    width: 100%;
     border-radius: 10px;
-    width: 70%;
-    background: white;
+    padding: 5px;
+    margin: 15px 0 15px 0;
+    font-size: 12px;
 }
 
-.short select:focus{
-    outline: none;
-}
-
-.adress input{
-    width: 20%;
-}
-
-.group-form textarea{
-    margin-left: 10px;
-    border-radius: 10px;
-    padding: 8px;
-    width: 95%;
-}
-
-.group-form textarea:focus{
-    outline: none;
-}
-
-.group-form-radio{
+.group-form-radio {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px 0 20px 0;
     flex-direction: column;
     gap: 10px;
+    padding: 5px;
+    margin: 15px 0 15px 0;
 }
 
-.group-form-radio label{
+.group-form-radio label {
     font-size: 12px;
 }
 
-.btn-register{
+.btn-register {
     justify-content: center;
     align-items: center;
     padding-bottom: 30px;
     font-size: 12px;
 }
 
-.btn-register button{
+.btn-register button {
     font-size: 12px;
 }
 
 /*  TOURIST ATTRACTION REGISTRATION MESSAGE */
-.msg, .msg-erro{
+.msg,
+.msg-erro {
     width: 100%;
     margin-bottom: 0;
     text-align: center;
@@ -561,13 +583,13 @@ main {
     font-size: 10px;
 }
 
-.msg{
+.msg {
     background-color: #D4EDDA;
     color: #155724;
     border: 1px solid #C3E6CB;
 }
 
-.msg-erro{
+.msg-erro {
     background-color: #f36b6b;
     color: #ffffff;
     border: 1px solid #ff0000;
@@ -578,17 +600,19 @@ main {
 }
 
 /* FOOTER */
-footer{
+footer {
     width: 100%;
     color: white;
 }
-#footer_content{
+
+#footer_content {
     background: #508E8B;
     display: grid;
     padding: 20px;
     font-size: 12px;
 }
-.circle-footer a{
+
+.circle-footer a {
     font-size: 25px;
     background: white;
     padding: 6px 6px 3px 6px;
@@ -596,63 +620,74 @@ footer{
     border-radius: 100%;
     color: #508E8B;
 }
-#footer_social_media{
+
+#footer_social_media {
     display: flex;
-    gap:2rem;
+    gap: 2rem;
     margin-top: 1.5rem;
 }
-#footer_social_media .footer_link{
+
+#footer_social_media .footer_link {
     height: 2.5rem;
     width: 2.5rem;
     color: white;
     border-radius: 50%;
     transition: all 0.4s;
 }
-.footer-list{
+
+.footer-list {
     display: flex;
     flex-direction: column;
-    gap:0.75rem;
+    gap: 0.75rem;
 }
-.footer-link{
+
+.footer-link {
     outline: none;
     text-decoration: none;
     color: #fff;
     list-style: none;
 }
 
-.footer-list .footer-link{
+.footer-list .footer-link {
     transition: all 0.4s;
 }
-#footer_copyright{
+
+#footer_copyright {
     padding: 20px;
     background-color: #508E8B;
 }
-#footer_copyright p{
+
+#footer_copyright p {
     padding: 10px 10px 20px;
     width: 100%;
     text-align: center;
     font-size: 12px;
 }
-#footer-list ul{
-    list-style-type:none;
+
+#footer-list ul {
+    list-style-type: none;
 }
-#footer-list ul li{
+
+#footer-list ul li {
     margin-top: 10px;
     text-align: center;
 }
+
 #footer_content {
     grid-template-columns: repeat(1, 1fr);
 }
 
-#footer-list, #contacts {
-   display: flex;
-   align-items: center;
-   justify-content: center;
+#footer-list,
+#contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#contacts{
+#contacts {
     flex-direction: column;
 }
-#contacts img{
-width: 120px;
+
+#contacts img {
+    width: 120px;
 }
