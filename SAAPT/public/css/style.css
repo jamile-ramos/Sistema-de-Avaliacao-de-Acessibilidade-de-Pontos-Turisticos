@@ -266,10 +266,10 @@ main {
     left: 0;
 }
 
-#img-card {
+.img-card {
     width: 80%;
     padding-bottom: 80%;
-    background-image: url(/img/teste.jpg);
+    background-image: url('');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -436,7 +436,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 15vh 0 15vh 0;
+    margin: 25vh 0 25vh 0;
     flex-direction: column;
 }
 
@@ -545,7 +545,7 @@ main {
     font-size: 12px;
 }
 
-.group-form-radio {
+.group-form-choose {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -556,8 +556,12 @@ main {
     margin: 15px 0 15px 0;
 }
 
-.group-form-radio label {
+.group-form-choose label {
     font-size: 12px;
+}
+
+#image {
+    font-size: 10px;
 }
 
 .btn-register {

@@ -1,4 +1,4 @@
-// js do menu responsivo
+// Js do menu responsivo
 const menu = this.document.querySelector('nav ul')
 window.addEventListener('scroll', function () {
 
@@ -16,7 +16,7 @@ back_icon.addEventListener('click', function () {
 })
 
 
-/*js da percentagem*/
+/* Js da percentagem*/
 document.addEventListener('DOMContentLoaded', function () {
     const percentages = document.querySelectorAll('.percentage');
 
@@ -79,4 +79,19 @@ document.addEventListener('DOMContentLoaded', function(){
             }, 2000)
         }, 4000)
     }
+})
+
+// Js para pegar a img do bd e adicionar ao card no welcome
+document.addEventListener('DOMContentLoaded', function(){
+    const imgCards = document.querySelectorAll('.img-card')
+
+    imgCards.forEach((card) => {
+        const urlImage = card.getAttribute('data-image')
+        if(urlImage){
+            card.style.backgroundImage = `url(/img/attractions/${urlImage})`
+            console.log(urlImage)
+        }else{
+            card.style.backgroundImage = 'url(/img/attractions/semImage.png)'
+        }
+    })
 })

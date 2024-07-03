@@ -7,7 +7,7 @@
 <section class="register-container flex">
     <div class="register-form">
         <h1>Cadastrar Ponto Turístico</h1>
-        <form action="/touristPoint" method="POST">
+        <form action="/touristPoint" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="group-form-two flex">
                 <div class="group-form">
@@ -45,8 +45,6 @@
                         </select>
                     </div>
                 </div>
-
-
             </div>
 
             <div class="adress flex">
@@ -68,7 +66,12 @@
                 <textarea name="description" id="description" placeholder="Descreva o ponto turístico..." required></textarea>
             </div>
 
-            <div class="group-form-radio">
+            <div class="group-form-choose">
+                <label for="image">Escolha a imagem do ponto turístico</label>
+                <input type="file" name="image" id="image" required> 
+            </div>
+
+            <div class="group-form-choose">
                 <label for="touristPointType">O ponto turístico é:</label>
                 <div class="type">
                     <input type="radio" name="touristPointType" id="publico" value="0">
@@ -81,7 +84,7 @@
                 </div>
             </div>
 
-            <div class="group-form-radio">
+            <div class="group-form-choose">
                 <label for="touristPointType">Você é proprietário do ponto turístico?</label>
                 <div class="type">
                     <input type="hidden" name="owner" value="1">

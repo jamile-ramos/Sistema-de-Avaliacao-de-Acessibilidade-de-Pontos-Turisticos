@@ -54,7 +54,7 @@
                 </div>
                 <div class="group-touristPoint">
                     <div class="container-img">
-                        <div id="img-card"></div>
+                        <div class="img-card" data-image="{{ $point->image }}"></div>
                     </div>
                     <div class="info">
                         <div class="bar-all flex">

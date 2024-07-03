@@ -78,6 +78,19 @@ class TouristPointController extends Controller
             $point->category = (int)$request->category;
             $point->accessType = (int)$request->acessType;
             $point->owner = (int)$request->owner;
+
+            // Image apload
+            if($request->hasFile('image') && $request->file('image')->isValid()){
+                $requestImage = $request->image;
+                $imageExtension = $requestImage->extension();
+                
+                $imageName = md5($requestImage->getClientOriginalName().strtotime('now')) .'.'.$imageExtension;
+
+                $request->image->move(public_path('img/attractions'), $imageName);
+
+                $point->image = $imageName;
+            }
+
             $point->save();
             return redirect('/')->with('msg', 'Ponto turístico cadastrado com sucesso!');
         }
